@@ -1,0 +1,254 @@
+/* Home, Contact, Skills, Experience, Projects, Education, Awards, More */
+/* Navbar, Intro, Contact, Skills, Experience, Side Projects, Education, Distinctions, Hobbies */
+
+html { overflow-x: hidden; }
+
+* {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 4rem;
+    color: white;
+}
+
+#background {
+    background-color: grey;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 1vh;
+}
+
+h3 {
+    font-size: 69%;
+}
+
+/* #left_col {
+    float: left;
+} */
+
+/* #right_col {
+    float: right;
+} */
+
+.navbar {
+    background-color: #000;
+    box-shadow: 0px 8px 18px -5px rgba(0,0,0,0.75);
+    height: 5rem;
+    /* height: 6vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar__menu {
+    display: flex; /*horizontal display*/
+    align-items: center; /*move to center of navbar*/
+    list-style: none; /*gets rid of bullet points in navbar*/
+}
+
+.navbar__menu li {
+    height: 30px;
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%; /*centers words??*/
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.navbar__links:hover {
+    background-color: #509d99;
+}
+
+/* Intro */
+
+#home {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1 {
+    margin: 1.5rem 0 1rem 0;
+    font-size: 4.5vw;
+    font-family: 'Raleway'serif;
+}
+
+#home img {
+    height: 50%;
+    width: 50%;
+    box-shadow: -2px 8px 14px 7px rgba(0,0,0,0.35);
+    border-radius: 51%;
+}
+
+#contact p {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#contact__btn--container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 20%;
+}
+
+.contact__btn {
+    background: #3ee3b7;
+    border: none;
+    border-radius: 18px;
+    padding: 20% 15% 0 15%;
+}
+
+.contact__btn:hover {
+    background: #4e48ed;
+    transition: all 0.30s;
+    cursor: pointer;
+}
+
+/* Education */
+
+#education {
+    text-align: center;
+}
+
+#education__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.education__card {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+/* Skills */
+
+#skills {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.skills__list {
+    margin: 1% 0;
+}
+
+.skills__img {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38px;
+    background-color: #28666e;
+    box-shadow: -3px 4px 18px -5px rgba(0,0,0,0.75);
+    transition: 0.2s ease-in;
+    border: none;
+}
+
+/* Experience */
+
+#experience {
+    text-align: center;
+}
+
+.experience__detail {
+    list-style-type: upper-roman;
+}
+
+/* Side Projects / Personal Projects */
+
+.projects__item {
+    padding: 3vh;
+    text-align: center;
+}
+
+.projects__item h3 {
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+.projects__item p {
+    margin: 1vw 1.2vw;
+    list-style: square;
+}
+
+/* Interests */
+
+.interests__item {
+    padding: 3vh;
+}
+
+.interests__item h2 {
+    text-align: center;
+    padding: 1.2vw;
+    margin: 1vw;
+}
+
+.interests__item p {
+    padding: 1vw;
+    margin: 1vw;
+}
+
+/* Footer */
+
+#footer__container {
+    background: #000;
+}
+
+#footer__contact h3 {
+    padding: 1%;
+}
+
+.footer__link--item {
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+}
+
+.footer__link--item a {
+    text-decoration: none;
+}
+
+.footer__contact--item {
+    padding: 0.2%;
+}
+
+#footer__socialmedia {
+    font-size: 6.9vh;
+}
+
+.trademark {
+    padding: 0 0.3% 0.3% 0;
+    font-size: 0.69vw;
+    text-align: right;
+}

@@ -1,192 +1,48 @@
 /* Mobile Support */
 
-@media screen and (max-width: 800px) {
-    * {
-        font-size: 1rem;
+@media screen and (max-width: 1350px) {
+
+    #left_col {
+        float: left;
+        width: 50%;
+    }
+    
+    #right_col {
+        margin-left: 5%;
     }
 }
 
 @media screen and (max-width: 960px) {
-    .navbar__container { /*same as above*/
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%; /*bring navbar dropdown to the center*/
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 0 50px;
-    }
 
-    .navbar__menu {
-        display: grid; /*navbar becomes vertical*/
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px; /*?*/
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: -1;
-        background: #000;
+    #left_col {
+        float: left;
+        width: 50%;
     }
-
-    .navbar__menu.active {
-        background: #000;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 80vh; /*size of black dropdown box*/
-        font-size: 1.6rem;
-    }
-
-    .navbar__toggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff;
-    }
-
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+    
+    #right_col {
+        margin-left: 5%;
     }
 }
 
-@media screen and (max-width: 1350px) {
-
-    .intro__container {
-        flex-direction: column;
-    }
-    
-    /* .intro__heading {
-        font-size: 60px;
-    } */
-
-    .contact__btn--container {
-        justify-content: space-between;
-    }
-
-    .contact__container {
-        margin: 0 2rem;
-    }
-    
-    /* .intro__heading {
-        margin-bottom: 5vw;
-        padding-top: 2vw;
-        color: #fff;
-    } */
-    
-    .skills__card {
-        margin: 2.0rem;
-        padding: 1.2rem;
-    }
-
-    .skills__container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .intro {
-        font-size: 1rem;
-    }
-    .contact__container {
+@media screen and (max-width: 800px) {
+    * {
         font-size: 1rem;
     }
 
-    .intro__container {
-        flex-direction: column;
+    #left_col {
+        float: none;
+        width: 100%;
     }
     
-    /* .intro__heading {
-        font-size: 60px;
-    } */
-
-    .contact__btn--container {
-        justify-content: space-between;
-    }
-
-    .contact__container {
-        margin: 0 2rem;
-    }
-
-    .intro__img--container {
-        display: none;
-    }
-
-    .fa-solid {
-        display: none !important;
-    }
-
-    .skills__card {
-        margin: 0.5rem;
-    }
-
-    .skills__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .skills {
-        margin-bottom: 0;
-    }
-
-    .skills {
-        padding: 0;
-    }
-    
-    .education h1 {
-        padding: 0;
-    }
-
-    .education__container {
-        padding: 1vh;
-    }
-
-    .education__info {
-        padding: 5vw;
+    #right_col {
+        margin-left: 0%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .skills__card {
-        margin: 1.5rem;
-        padding: 1.2rem;
-        transform: scale(0.925);
-    }
 
-    .skills__container {
-        grid-template-columns: 1fr 1fr;
+    #right_col {
+        padding: 0%;
     }
 
     .education h1 {
@@ -195,14 +51,6 @@
 
     .education__container {
         padding: 1vh;
-    }
-
-    .education__info {
-        padding-left: 0;
-    }
-
-    #uoft-logo, #eci-logo {
-        display: none;
     }
 
     .experience h1 {
@@ -217,23 +65,31 @@
         padding: 5vw;
     }
 
-    .projects__container {
-        font-size: 60px;
+    .trademark {
+        display: none;
     }
+}
 
-    .projects__png {
+@media screen and (max-width: 480px) {
+
+    /* #home img {
+        display: none;
+    } */
+
+    .fa-solid {
         display: none !important;
     }
 
-    .interests h1 {
+    .skills {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .education h1 {
         padding: 0;
     }
 
-    .interests__item h2 {
-        padding-top: 0;
-    }
-
-    .trademark {
-        display: none;
+    .education__container {
+        padding: 1vh;
     }
 }

@@ -5,10 +5,10 @@ html { overflow-x: hidden; }
 
 * {
     margin: 0;
-    font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
     scroll-margin-top: 4rem;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .hidden {
@@ -16,7 +16,7 @@ html { overflow-x: hidden; }
 }
 
 #background {
-    background-color: grey;
+    background-color: #1f241f;
     text-align: center;
 }
 
@@ -25,11 +25,7 @@ h1 {
 }
 
 h3 {
-    font-size: 69%;
-}
-
-#left_col {
-    float: left;
+    font-size: 71%;
 }
 
 /* Intro */
@@ -87,64 +83,41 @@ h3 {
 }
 
 .skills__list {
-    margin: 1% 0;
+    margin: 0.69% 0;
 }
 
-.skills__img {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 38px;
-    background-color: #28666e;
-    box-shadow: -3px 4px 18px -5px rgba(0,0,0,0.75);
-    transition: 0.2s ease-in;
-    border: none;
-}
-
-/* Experience */
+/* Experience & Side Projects */
 
 #experience {
+    text-align: left;
+}
+
+#experience h1, h2, h3 {
     text-align: center;
+}
+
+#experience h1 {
+    padding-bottom: 0.5%;
+}
+
+#experience h3 {
+    padding-top: 0.23%;
 }
 
 .experience__detail {
-    list-style-type: upper-roman;
+    list-style-type: square;
 }
 
-/* Side Projects / Personal Projects */
-
-.projects__item {
-    padding: 3vh;
-    text-align: center;
+.experience__card {
+    padding: 0.9%;
 }
 
-.projects__item h3 {
-    margin-top: 1vw;
-    margin-bottom: 2vw;
+.experience__detail {
+    padding: 0.8%;
 }
 
-.projects__item p {
-    margin: 1vw 1.2vw;
-    list-style: square;
-}
-
-/* Interests */
-
-.interests__item {
-    padding: 3vh;
-}
-
-.interests__item h2 {
-    text-align: center;
-    padding: 1.2vw;
-    margin: 1vw;
-}
-
-.interests__item p {
-    padding: 1vw;
-    margin: 1vw;
+.experience__detail li {
+    padding: 0.58%;
 }
 
 /* Footer */

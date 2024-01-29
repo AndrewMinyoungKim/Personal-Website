@@ -11,14 +11,7 @@ html { overflow-x: hidden; }
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.hidden {
-    display: none;
-}
-
-#background {
-    background-color: #1f241f;
-    text-align: center;
-}
+.hidden { display: none; }
 
 h1 {
     padding-top: 1vh;
@@ -26,6 +19,17 @@ h1 {
 
 h3 {
     font-size: 71%;
+}
+
+#background {
+    padding-bottom: 1.23%;
+    display: table;
+    /* background-color: #1f241f; */
+}
+
+#left_col, #right_col {
+    display: table-cell;
+    width: 33.33%;
 }
 
 /* Intro */
@@ -89,10 +93,6 @@ h3 {
 /* Experience & Side Projects */
 
 #experience {
-    text-align: left;
-}
-
-#experience h1, h2, h3 {
     text-align: center;
 }
 
@@ -116,6 +116,11 @@ h3 {
     padding: 0.8%;
 }
 
+.experience__card ul {
+    display: inline-block;
+    padding: 0% 5%;
+}
+
 .experience__detail li {
     padding: 0.58%;
 }
@@ -123,7 +128,7 @@ h3 {
 /* Footer */
 
 #footer__container {
-    background: #000;
+    background-color: #000;
 }
 
 #footer__contact h4 {
@@ -133,7 +138,6 @@ h3 {
 
 .footer__link--item {
     text-align: center;
-    padding: 1%;
 }
 
 .footer__link--item a {
@@ -148,6 +152,71 @@ h3 {
 }
 
 #footer__socialmedia {
-    font-size: 6.9vh;
+    font-size: 69px;
     padding-bottom: 24px;
+}
+
+
+/* Mobile Support */
+
+@media screen and (max-width: 1350px) {
+}
+
+@media screen and (max-width: 1200px) {
+    #contact__email__clipboard {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #background, #left_col, #right_col {
+        display: unset;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .education h1 {
+        padding: 0;
+    }
+
+    .education__container {
+        padding: 1vh;
+    }
+
+    .experience h1 {
+        padding: 0;
+    }
+
+    .experience__card {
+        padding: 2rem 1rem;
+    }
+
+    .experience__detail {
+        padding: 5vw;
+    }
+
+    .trademark {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #contact__phone__clipboard {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .education h1 {
+        padding: 0;
+    }
+
+    .education__container {
+        padding: 1vh;
+    }
 }
